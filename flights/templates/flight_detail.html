@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ flight.id }} - {{ flight.name }}</title>
+  </head>
+  <body>
+    <h1>Flight {{ flight.name }}</h1>
+    <p>Trip: {{ flight.trip }}</p>
+    <p>Duration: {{ flight.duration }}</p>
+    <p>Prices:</p>
+    <ul>
+      <li>Economy: {{ flight.prices.economy }}</li>
+      <li>Economy Plus: {{ flight.prices.economy_plus }}</li>
+      <li>Business: {{ flight.prices.business }}</li>
+      <li>First Class: {{ flight.prices.first_class }}</li>
+    </ul>
+  </body>
+</html>
