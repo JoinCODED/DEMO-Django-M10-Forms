@@ -205,7 +205,7 @@ Introduce students to forms and crispy forms.
 
 ### Crispy Forms
 
-1. Install `crispy-forms` by adding `pip install django-crispy-forms`.
+1. Install `crispy-forms` by running `pip install django-crispy-forms`.
 2. Add `crispy-forms` to our list of `INSTALLED_APPS` in `airports/setting.py`.
 3. Add the latest available bootstrap template `CRISPY_TEMPLATE_PACK = "bootstrap4"` to our `airport/settings.py`.
 4. Go to our `create_flight.html` and add `{% load crispy_forms_tags %}` to the top, then add the `crispy` pipe to our form like so: `{{ form | crispy }}`.
