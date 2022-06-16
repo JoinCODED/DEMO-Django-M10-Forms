@@ -55,7 +55,7 @@ Introduce students to forms and crispy forms.
 
    urlpatterns = [
        ...
-       path("flights/", views.create_flight, name="create-flight"),
+       path("flights/create", views.create_flight, name="create-flight"),
    ]
    ```
 
@@ -190,7 +190,7 @@ Introduce students to forms and crispy forms.
 
    urlpatterns = [
       ...
-      path("flights/<int:flight_id>", views.delete_flight, name="delete-flight"),
+      path("flights/<int:flight_id>/delete", views.delete_flight, name="delete-flight"),
    ]
    ```
 
