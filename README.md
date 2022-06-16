@@ -209,3 +209,13 @@ Introduce students to forms and crispy forms.
 2. Add `crispy-forms` to our list of `INSTALLED_APPS` in `airports/setting.py`.
 3. Add the latest available bootstrap template `CRISPY_TEMPLATE_PACK = "bootstrap4"` to our `airport/settings.py`.
 4. Go to our `create_flight.html` and add `{% load crispy_forms_tags %}` to the top, then add the `crispy` pipe to our form like so: `{{ form | crispy }}`.
+5. Add the `link` to `bootstrapv4` in `<head>`, like so:
+
+   ```html
+   <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+     crossorigin="anonymous"
+   />
+   ```
