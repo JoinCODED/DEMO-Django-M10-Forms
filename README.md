@@ -100,7 +100,7 @@ Introduce students to forms and crispy forms.
    def create_flight(request):
        form = FlightForm()
        if request.method == "POST":
-           form = ModelNameForm(request.POST)
+           form = FlightForm(request.POST)
            if form.is_valid():
                form.save()
                return redirect("flight-list")
