@@ -139,7 +139,7 @@ Introduce students to forms and crispy forms.
    - This is extremely similar to our create view, however, this time we are redirecting back to the detail page of our flight, and in our context we've added flight.
 
 2. Add our `update_flight` to our `urls.py` and add the name `update-flight`.
-3. In our templates we are `update_flight.html`:
+3. In our template `update_flight.html`:
 
    ```html
    <!DOCTYPE html>
